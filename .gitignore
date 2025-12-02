@@ -1,1 +1,8 @@
 encrypted_seed.txt
+# Python artifacts
+__pycache__/
+*.pyc
+
+# secrets
+encrypted_seed.txt
+.env
