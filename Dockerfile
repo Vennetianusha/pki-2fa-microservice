@@ -4,7 +4,7 @@ WORKDIR /app
 COPY app/requirements.txt .
 RUN apt-get update && apt-get install -y build-essential && \
     python -m pip install --upgrade pip && \
-    pip install --prefix=/install -r app/requirements.txt && \
+    pip install --prefix=/install -r requirements.txt && \
     apt-get purge -y --auto-remove build-essential && rm -rf /var/lib/apt/lists/*
 
 # Stage 2: runtime
